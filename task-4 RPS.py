@@ -39,11 +39,10 @@ def play(user_choice):
     user_score_label.config(text=f"You: {user_score}")
     comp_score_label.config(text=f"Computer: {computer_score}")
 
-# Title
+
 tk.Label(root, text="Rock Paper Scissors", fg="white",font=("Arial", 20, "bold"), bg="#523A28").pack(pady=10)
 tk.Label(root, text="Try your luck!", fg="#DDDDA4", font=("Arial", 12), bg="#523A28").pack()
 
-# Score Frame
 score_frame = tk.Frame(root, bg="#523A28")
 score_frame.pack(pady=10)
 
@@ -52,7 +51,7 @@ comp_score_label = tk.Label(score_frame, text="Computer: 0", font=("Arial", 14),
 user_score_label.grid(row=0, column=0, padx=50)
 comp_score_label.grid(row=0, column=1, padx=50)
 
-# Hands
+
 hands_frame = tk.Frame(root, bg="#523A28")
 hands_frame.pack(pady=10)
 
@@ -61,14 +60,13 @@ comp_hand = tk.Label(hands_frame, text="❓", font=("Arial", 40), bg="black", fg
 user_hand.grid(row=0, column=0, padx=50)
 comp_hand.grid(row=0, column=1, padx=50)
 
-# Result Label
+
 result = tk.StringVar()
 result_label = tk.Label(root, textvariable=result, font=("Arial", 14), fg="#FFCDB2", bg="#523A28")
 result_label.pack(pady=10)
 
 tk.Label(root, text="Choose One!", font=("Arial", 12, "bold"), fg="#FFB4A2", bg="#523A28").pack()
 
-# Buttons Frame
 button_frame = tk.Frame(root, bg="#523A28")
 button_frame.pack(pady=10)
 
